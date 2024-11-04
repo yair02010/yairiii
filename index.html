@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/indexStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="header">
+
+        <ul>
+            <li><a href="#Portfolio">ראשי</a></li>
+            <li><a href="#AboutMe">אודות</a></li>
+            <li><a href="#Myprojects">הפרויקטים שלי </a></li>
+            <li><a href="#conectUs">יצירת קשר</a></li>
+        </ul>
+        <img src="images/logo2 - Copy.png" alt="profile">
+    </nav>
+    <section class="Portfolio" id="Portfolio">
+        <h1>תיק העבודות שלי</h1>
+        <p>ברוכים הבאים לתיק העבודות שלי! כאן תוכלו לראות מגוון פרויקטים שיצרתי, המשלבים עיצוב ואפיון דפים לאתרים
+            ולנושאים מגוונים.</p>
+    </section>
+    <div class="images">
+        <img src="images/img-Bootstrap.png" alt="Bootstrap">
+        <img src="images/img-CSS.png" alt="css">
+        <img src="images/img-HTML.png" alt="html">
+        <img src="images/img-JS.png" alt="js">
+        <img src="images/img-API.png" alt="API">
+        <img src="images/img-ES6.png" alt="ES6">
+        <img src="images/img-TypeScript.png" alt="TypeScript">
+        <img src="images/img-OOP.png" alt="React">
+    </div>
+    <section class="AboutMe" id="AboutMe">
+        <h1>קצת עלי</h1>
+        <p>כמפתח Fullstack, אני מתמחה ביצירת פתרונות מותאמים אישית שמשלבים בין צד הלקוח לצד השרת. עם ניסיון בעבודה עם
+            טכנולוגיות
+            מתקדמות, אני יוצר חוויות משתמש חלקות ומרתקות שמביאות את הרעיונות שלכם לחיים. בואו לגלות איך אני יכול לסייע
+            לכם בהגשמת
+            הוויז'ן שלכם!</p>
+        <button id="btn">להורדת קורות חיים </button>
+    </section>
+    <div class="Myprojects" id="Myprojects">
+        <h1>הפרויקטים שלי</h1>
+        <p>להלן כמה מהפרויקטים שבניתי בתחום בניית אתרים.</p>
+        <div class="projects-container">
+            <div class="project">
+                <h1>בית קפה</h1>
+                <p>אתר תדמית לבית קפה .</p>
+                <a href="projects/preProject1.html" class="button">לצפייה בפרויקט</a>
+                <img src="images/project1.png" alt="image project 1">
+            </div>
+            <div class="project">
+                <h1>הובלה קדימה</h1>
+                <p>דף פרסומי המתמקד בשירותי הובלה.</p>
+                <a href="projects/preProject2.html" class="button">לצפייה בפרויקט</a>
+                <img src="images/project2.png" alt="Project 2 Image">
+            </div>
+            <div class="project">
+                <h1>דף נחיתה</h1>
+                <p>דף נחיתה פרסומי המכוון למגוון לקוחות.</p>
+                <a href="projects/preProject3.html" class="button">לצפייה בפרויקט</a>
+                <img src="images/project3.png" alt="Project 3 Image">
+            </div>
+            <div class="project">
+                <h1> דף נחיתה</h1>
+                <p>דף נחיתה נוסף לפרסום שירותי הובלה.</p>
+                <a href="projects/preProject4.html" class="button">לצפייה בפרויקט</a>
+                <img src="images/project4.png" alt="Project 4 Image">
+            </div>
+            <div class="project">
+                <h1>ייעוץ חינם</h1>
+                <p>דף נחיתה ליצירת קשר וקבלת ייעוץ חינם.</p>
+                <a href="projects/preProject5.html" class="button">לצפייה בפרויקט</a>
+                <img src="images/Project5.png" alt="Project 5 Image">
+            </div>
+            <div class="project">
+                <h1>טיולים בעולם</h1>
+                <p>דף נחיתה המציע טיולים ונסיעות ברחבי העולם.</p>
+                <a href="projects/preProject6.html" class="button">לצפייה בפרויקט</a>
+                <img src="images/project6.png" alt="Project 6 Image">
+            </div>
+        </div>
+    </div>
+    <div class="conectUs" id="conectUs">
+        <form>
+            <h2>צור קשר</h2>
+            <label for="name">שם מלא</label>
+            <input type="text" id="name" name="name" placeholder="הכנס את שמך" required>
+            <label for="email">דוא"ל</label>
+            <input type="email" id="email" name="email" placeholder="הכנס את האימייל שלך" required>
+            <label for="subject">נושא</label>
+            <input type="text" id="subject" name="subject" placeholder="הכנס נושא" required>
+            <label for="message">הודעה</label>
+            <textarea id="message" name="message" placeholder="כתוב את הודעתך כאן" required></textarea>
+            <button type="submit">שלח הודעה</button>
+        </form>
+    </div>
+    <footer>
+        <p>© כל הזכויות שמורות יאיר ירושלמי</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function () {
+            alert('עוד לא נוסף קורות חיים,...');
+        });
+    </script>
+</body>
+
+</html>
